@@ -1,0 +1,171 @@
+body{
+    font-family: 'Red Rose', cursive;
+    background-image: url("./cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    height: auto;
+    box-sizing: border-box;
+}
+body:hover{
+    /*cursor: arrow;*/
+}
+/*-----------Header Section----------------*/
+header .mobile{
+    display: none;
+}
+header .desktop{
+    display: inline-block;
+    width: 100%;
+}
+.desktop h2{
+    float: left;
+    margin-top: 10px; 
+    transition: all 350ms ease 0.2s;
+}
+.desktop h2:hover{
+    color: white;
+    cursor: pointer;
+}
+.desktop .social{
+    float: right;
+    margin: 10px;
+}
+.desktop .social button{
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: all 350ms ease 0.2s;
+}
+.desktop .social button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.desktop .social i{
+    padding: 5px 10px;
+    font-size: 18px;
+    transition: all 350ms ease 0.2s;
+}
+.desktop .social i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 470px){
+    body{
+        background-size: auto;
+    }
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-around;
+        width: 100%;
+    }
+    .mobile h2{
+        margin-top: 5px;
+        transition: all 350ms ease 0.2s;
+    }
+    .mobile h2:hover{
+        cursor: pointer;
+        color: white;
+    }
+    .mobile i{
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-top: 0;
+        transition: all 350ms ease 0.2s;
+    }
+    .mobile i:hover{
+        cursor: pointer;
+        color: white;
+    }
+}
+
+/*---------------main section------------*/
+main{
+    position: relative;
+    top: 30px;
+    background-color: rgba(211, 211, 211, 0.7);
+    width: 50%;
+    padding: 30px 60px;
+    margin: 10px;
+
+}
+main h3,
+main p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+main h3{
+    font-size: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main p{
+    font-size: 14px;
+    margin-top: 0;
+}
+main a{
+    color: black;
+    transition: all 350ms ease 0.2s;
+}
+main a:hover{
+    color: white;
+    cursor: pointer;
+}
+main button,
+main input{
+    padding: 20px 30px;
+    border: 1px solid transparent;
+}
+main button{
+    transition: all 350ms ease 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+main button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+@media only screen and (max-width: 470px){
+    main{
+        width: 60%;
+    }
+    main h3{
+        font-size: 30px;
+    }
+    main button,
+    main input{
+        padding: 10px 20px;
+        margin: 5px;
+    }
+
+}
+
+/*---------------footer style--------------*/
+footer {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    transition: all 350ms ease 0.2s;
+}
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 470px){
+    
+}
